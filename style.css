@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #e4e2eb;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.clock{
+    border: 3px solid #0b141b;
+    border-radius: 10px;
+}
+
+.display-clock{
+    color: #fff;
+    background: #10101E;
+    font-family: "Segoe UI", serif;
+    width: 50vw;
+    padding: 15px 10px;
+    transition: 0.5s;
+    transition-property: background,box-shadow;
+}
+
+
+.date{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.time{
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time span:not(:last-child){
+    position: relative;
+    max-width: 0 6px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.time span:last-child{
+    background: #10101E;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+hr{
+    border: 1px solid #10101E;
+    margin: 20px auto;
+}
+
+.alarm-field{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.section select{
+    background: #10101E;
+    color: #fff;
+    text-align: center;
+    padding: 8px 4px;
+    border: 1px solid #10101e;
+    border-radius: 18px;
+}
+
+
+#btn-alarmsetting, .btn-delete, #stopAlarm{
+    padding: 5px;
+    color: #fff;
+    background: #10101E;
+    border: 1px solid #10101E;
+    border-radius: 18px;
+}
+
+#stopAlarm{
+    visibility: hidden;
+    width: 100px;
+    margin: 0 34%;
+}
+
+.btn-delete{
+    margin-left: 50px;
+}
+
+#btn-alarmsetting:hover, .btn-delete:hover, #stopAlarm:hover{
+    cursor: pointer;
+    background: #10101E;
+    box-shadow: 0 0 30px #10101E;
+}
+
+h3{
+    color: #10101E;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.Listingalarm{
+    color: #10101E;
+    margin: 14px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.alarmLog{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
